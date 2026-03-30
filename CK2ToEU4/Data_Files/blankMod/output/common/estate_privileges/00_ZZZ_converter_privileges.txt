@@ -230,6 +230,17 @@ estate_church_clerical_ministers = {
 	}
 	conditional_modifier = {
 		trigger = {
+			OR = {
+				religion = catholic
+				religion = fraticelli
+			}
+		}
+		modifier = {	
+			curia_powers_cost = -0.20
+		}
+	}
+	conditional_modifier = {
+		trigger = {
 			has_government_attribute = clerical_ministers_tech_buff
 		}
 		modifier = {
